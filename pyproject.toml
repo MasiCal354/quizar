@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "quizar"
+version = "0.1.0"
+description = ""
+authors = ["Faisal Prasetya <faisalmalikwidyaprasetya@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.95.1"
+alembic = "^1.10.3"
+python-multipart = "^0.0.6"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+psycopg2-binary = "^2.9.6"
+pytimeparse = "^1.1.8"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.2.2"
+locust = "^2.15.1"
+faker = "^18.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
